@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="91.0" prefWidth="387.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.ideca_client.PopupNotificationsController">
+   <children>
+      <Label layoutX="369.0" layoutY="6.0" text="X" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="15.0" prefHeight="63.0" prefWidth="283.0" text="ceci est une notifications" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

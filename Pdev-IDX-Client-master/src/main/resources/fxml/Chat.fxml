@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="443.0" prefWidth="600.0" style="-fx-background-color: #3B5998;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.ideca_client.ChatController">
+   <children>
+      <ImageView fitHeight="452.0" fitWidth="614.0" layoutX="-6.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Acceuil.jpg" />
+         </image>
+      </ImageView>
+      <JFXListView fx:id="conversation" layoutX="164.0" layoutY="55.0" opacity="0.79" prefHeight="240.0" prefWidth="426.0" style="-fx-background-radius: 10;" />
+      <JFXListView fx:id="boite" layoutX="14.0" layoutY="85.0" onMouseClicked="#clickList" opacity="0.79" prefHeight="334.0" prefWidth="132.0" style="-fx-background-radius: 10;" />
+      <JFXTextField fx:id="message" layoutX="166.0" layoutY="310.0" opacity="0.79" prefHeight="108.0" prefWidth="426.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
+      <ImageView fitHeight="44.0" fitWidth="136.0" layoutX="13.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="send" buttonType="RAISED" layoutX="497.0" layoutY="364.0" onAction="#btnSaveAction" prefHeight="28.0" prefWidth="70.0" ripplerFill="#e8702a" style="-fx-background-color: #33da63;" text="SEND" textFill="WHITE" />
+      <JFXTextField fx:id="nomPrenomL" layoutX="266.0" layoutY="15.0" opacity="0.79" prefHeight="28.0" prefWidth="203.0" style="-fx-background-color: white;" />
+      <JFXButton fx:id="bRecieved" buttonType="RAISED" layoutX="14.0" layoutY="60.0" onAction="#receivedEvent" style="-fx-background-color: #33da63;" text="Chat" textFill="WHITE" />
+      <JFXButton fx:id="bSent" buttonType="RAISED" layoutX="62.0" layoutY="60.0" onAction="#sentEvent" style="-fx-background-color: #33da63;" text="No response" textFill="WHITE" />
+      <JFXListView fx:id="sent" layoutX="14.0" layoutY="85.0" onMouseClicked="#clickListS" opacity="0.79" prefHeight="334.0" prefWidth="132.0" style="-fx-background-radius: 10;" />
+      <ImageView fitHeight="44.0" fitWidth="27.0" layoutX="532.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/log-out.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="deconnect" layoutX="522.0" layoutY="5.0" onAction="#Deconnect" prefHeight="44.0" prefWidth="54.0" text="." />
+   </children>
+</AnchorPane>

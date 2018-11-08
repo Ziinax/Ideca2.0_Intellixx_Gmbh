@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.media.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="1100.0" prefWidth="1423.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.ideca_client.FxOptionController">
+   <children>
+      <Pane prefHeight="1100.0" prefWidth="1423.0">
+         <children>
+            <Pane layoutX="329.0" layoutY="117.0" prefHeight="21.0" prefWidth="1018.0" style="-fx-background-color: ;">
+               <children>
+                  <Pane fx:id="ProfileUser" layoutX="447.0" layoutY="-11.0" opacity="0.63" prefHeight="384.0" prefWidth="479.0" style="-fx-background-color: #01579b;">
+                     <children>
+                        <HBox layoutX="-2.0" prefHeight="384.0" prefWidth="479.0">
+                           <children>
+                              <Pane opacity="0.49" prefHeight="384.0" prefWidth="240.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" height="384.0" stroke="BLACK" strokeType="INSIDE" style="-fx-background-color: black;" width="239.0" />
+                                    <Text fill="#22e854" layoutX="25.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FirstName">
+                                       <font>
+                                          <Font name="System Bold Italic" size="15.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="#22e854" layoutX="26.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LastName">
+                                       <font>
+                                          <Font name="System Bold Italic" size="15.0" />
+                                       </font>
+                                    </Text>
+                                    <Label fx:id="firstNameLabel" layoutX="139.0" layoutY="87.0" prefHeight="21.0" prefWidth="83.0" text="Label" textFill="WHITE" />
+                                    <Label fx:id="lastNameLabel" layoutX="139.0" layoutY="122.0" prefHeight="21.0" prefWidth="83.0" text="Label" textFill="WHITE" />
+                                    <Text fill="#22e854" layoutX="25.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+                                       <font>
+                                          <Font name="System Bold Italic" size="15.0" />
+                                       </font>
+                                    </Text>
+                                    <Label fx:id="EmailLabel" layoutX="139.0" layoutY="165.0" prefHeight="21.0" prefWidth="83.0" text="Label" textFill="WHITE" />
+                                    <Text fill="#f89b05" layoutX="7.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-fill: red;" text="Personal Informations">
+                                       <font>
+                                          <Font name="System Bold Italic" size="21.0" />
+                                       </font>
+                                    </Text>
+                                    <JFXButton fx:id="editProfile" buttonType="RAISED" layoutY="215.0" onAction="#EditProfileAction" prefHeight="59.0" prefWidth="239.0" ripplerFill="RED" style="-fx-background-color: red;" text="Edit profile" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="384.0" prefWidth="241.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <JFXButton buttonType="RAISED" layoutX="1.0" opacity="0.68" prefHeight="59.0" prefWidth="239.0" ripplerFill="WHITE" style="-fx-background-color: black;" text="Personal Data" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton buttonType="RAISED" layoutX="1.0" layoutY="67.0" opacity="0.68" prefHeight="51.0" prefWidth="239.0" ripplerFill="WHITE" style="-fx-background-color: black;" text="Contact Data" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton buttonType="RAISED" layoutX="1.0" layoutY="128.0" opacity="0.68" prefHeight="51.0" prefWidth="239.0" ripplerFill="WHITE" style="-fx-background-color: black;" text="List Trades" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton buttonType="RAISED" layoutX="1.0" layoutY="192.0" opacity="0.68" prefHeight="51.0" prefWidth="239.0" ripplerFill="WHITE" style="-fx-background-color: black;" text="Liste Traders" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton buttonType="RAISED" layoutX="1.0" layoutY="252.0" opacity="0.68" prefHeight="51.0" prefWidth="239.0" ripplerFill="WHITE" style="-fx-background-color: black;" text="List Equity Options" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton buttonType="RAISED" layoutX="1.0" layoutY="312.0" opacity="0.68" prefHeight="51.0" prefWidth="239.0" ripplerFill="WHITE" style="-fx-background-color: black;" text="List Fx Options" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <ImageView fitHeight="1111.0" fitWidth="1445.0" layoutY="-5.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@../images/Acceuil.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="8.0" fitWidth="1397.0" layoutX="14.0" layoutY="97.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/barreGris.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="78.0" fitWidth="70.0" layoutX="1156.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/user.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="ProfilePic" layoutX="1156.0" layoutY="10.0" mnemonicParsing="false" opacity="0.0" prefHeight="78.0" prefWidth="83.0" />
+            <ImageView fitHeight="70.0" fitWidth="223.0" layoutX="21.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo.png" />
+               </image>
+            </ImageView>
+            <HBox layoutX="874.0" layoutY="6.0" prefHeight="39.0" prefWidth="270.0">
+               <children>
+                  <Pane opacity="0.84" prefHeight="70.0" prefWidth="284.0" style="-fx-background-color: #f8ac2f; -fx-background-radius: 50px 50px 50px 50px;">
+                     <children>
+                        <HBox layoutX="2.0" layoutY="-1.0" prefHeight="39.0" prefWidth="284.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="31.0" prefWidth="139.0" text="Date" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="31.0" prefWidth="135.0" text="Hour" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <HBox layoutX="874.0" layoutY="49.0" prefHeight="39.0" prefWidth="270.0">
+               <children>
+                  <Pane opacity="0.84" prefHeight="70.0" prefWidth="284.0" style="-fx-background-color: #f8ac2f; -fx-background-radius: 50px 50px 50px 50px;">
+                     <children>
+                        <HBox layoutX="2.0" layoutY="-1.0" prefHeight="39.0" prefWidth="284.0">
+                           <children>
+                              <Label fx:id="timerLabel" alignment="CENTER_RIGHT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="31.0" prefWidth="139.0" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="timerLabel1" alignment="CENTER" prefHeight="31.0" prefWidth="135.0" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <JFXButton layoutX="1274.0" layoutY="14.0" onAction="#Deconnect" prefHeight="59.0" prefWidth="133.0" />
+            <ImageView fitHeight="37.0" fitWidth="45.0" layoutX="1284.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/log-out.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="24.0" layoutY="135.0" prefHeight="1029.0" prefWidth="1269.0">
+               <children>
+                  <AnchorPane layoutX="289.0" layoutY="14.0" prefHeight="114.0" prefWidth="207.0" />
+                  <Pane layoutX="380.0" layoutY="216.0" prefHeight="549.0" prefWidth="864.0" style="-fx-background-color: #e5e5e5;">
+                     <children>
+                        <GridPane focusTraversable="true" layoutX="22.0" layoutY="9.0" prefHeight="532.0" prefWidth="821.0">
+                           <children>
+                              <Label alignment="BOTTOM_CENTER" contentDisplay="TEXT_ONLY" prefHeight="21.0" prefWidth="184.0" text="Model">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="188.0" text="Option Type" textAlignment="CENTER" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="183.0" text="Maturity Date" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="21.0" prefWidth="188.0" text="Nominal" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="21.0" prefWidth="185.0" text="Strike Price" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="21.0" prefWidth="202.0" text="Spot rate" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="47.0" prefWidth="181.0" text="Domestic Risk-Free" GridPane.rowIndex="6">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="193.0" text="Foreign Risk-Free" GridPane.rowIndex="7">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="21.0" prefWidth="196.0" text="FX Volatility" GridPane.rowIndex="8">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="spotRateInput" prefHeight="53.0" prefWidth="692.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                              <TextField fx:id="domesticRiskInput" prefHeight="51.0" prefWidth="692.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                              <TextField fx:id="foreignRiskInput" prefHeight="50.0" prefWidth="692.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                              <JFXComboBox fx:id="modelCombo" prefHeight="31.0" prefWidth="348.0" GridPane.columnIndex="1" />
+                              <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <children>
+                                    <Pane prefHeight="59.0" prefWidth="241.0">
+                                       <children>
+                                          <JFXCheckBox fx:id="call" layoutX="-1.0" layoutY="19.0" onAction="#callAction" prefHeight="21.0" prefWidth="71.0" text="Call" />
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="66.0" prefWidth="349.0">
+                                       <children>
+                                          <JFXCheckBox fx:id="put" layoutX="48.0" layoutY="17.0" onAction="#PutAction" text="Put" />
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </HBox>
+                              <DatePicker fx:id="dateInput" prefHeight="41.0" prefWidth="357.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <TextField fx:id="nominalInput" prefHeight="50.0" prefWidth="692.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <TextField fx:id="strikePriceInput" alignment="CENTER" prefHeight="50.0" prefWidth="638.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <TextField fx:id="fxVolatilityInput" prefHeight="49.0" prefWidth="638.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                              <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                                 <children>
+                                    <Pane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <JFXButton fx:id="btnSave" layoutX="43.0" layoutY="14.0" onAction="#btnSaveAction" prefHeight="38.0" prefWidth="114.0" ripplerFill="#33e465" style="-fx-background-color: #49796b;" text="Valuate" textFill="WHITE" />
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <JFXButton fx:id="btnpersist" layoutX="43.0" layoutY="14.0" onAction="#btnpersistAction" prefHeight="38.0" prefWidth="114.0" ripplerFill="#33e465" style="-fx-background-color: #49796b;" text="Save" textFill="WHITE" />
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <JFXButton fx:id="btnclear" layoutX="50.0" layoutY="14.0" onAction="#btnclearAction" prefHeight="38.0" prefWidth="114.0" ripplerFill="#33e465" style="-fx-background-color: #49796b;" text="Clear" textFill="WHITE" />
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="372.0" minWidth="10.0" prefWidth="183.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="692.0" minWidth="10.0" prefWidth="638.0" />
+                           </columnConstraints>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="58.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="61.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="85.0" minHeight="10.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="92.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="118.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="122.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="127.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="148.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="147.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="97.0" minHeight="10.0" prefHeight="62.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                     </children>
+                  </Pane>
+                  <Label fx:id="LBvalue" layoutX="672.0" layoutY="865.0" prefHeight="38.0" prefWidth="219.0" textFill="RED" />
+               </children>
+            </Pane>
+            <Label fx:id="LBtype" layoutX="696.0" layoutY="910.0" prefHeight="38.0" prefWidth="114.0" textFill="RED" />
+            <Label layoutX="423.0" layoutY="910.0" prefHeight="38.0" prefWidth="104.0" text="FX Option" textFill="#f5f2f2">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="PremiumPerShare" layoutX="696.0" layoutY="952.0" prefHeight="43.0" prefWidth="142.0" textFill="RED" />
+            <Label layoutX="540.0" layoutY="910.0" prefHeight="38.0" prefWidth="74.0" text="Type :" textFill="#f5f2f2">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="540.0" layoutY="1000.0" prefHeight="38.0" prefWidth="59.0" text="Price =" textFill="#f5f2f2">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="540.0" layoutY="955.0" prefHeight="38.0" prefWidth="142.0" text="Premium per unit =" textFill="#f5f2f2">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="413.0" layoutY="26.0" onAction="#tradeBtnAction" prefHeight="59.0" prefWidth="186.0" style="-fx-border-color: orange; -fx-background-radius: 50px 50px 50px 50px;" styleClass="-" text="   Trade" textFill="#fcf9f9">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="51.0" fitWidth="63.0" layoutX="416.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/trading.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="51.0" fitWidth="63.0" layoutX="612.0" layoutY="30.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/trading.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="tradeRequestBtn" layoutX="612.0" layoutY="26.0" onAction="#tradeRequestBtnAction" prefHeight="59.0" prefWidth="249.0" style="-fx-border-color: orange; -fx-background-radius: 50px 50px 50px 50px;" styleClass="-" text="        Trade Request" textFill="#fcf9f9">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <GridPane fx:id="sidebar" layoutX="24.0" layoutY="127.0" prefHeight="848.0" prefWidth="258.0" style="-fx-background-color: #005073;">
+         <children>
+            <ImageView fitHeight="63.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER">
+               <image>
+                  <Image url="@../images/user.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <Label fx:id="fullname" ellipsisString="" prefHeight="30.0" prefWidth="152.0" text="FULLNAME" textFill="WHITE" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+            <Label ellipsisString="" text="   Deconnexion" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="10">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Label fx:id="firstNameLabel1" layoutX="10.0" prefHeight="39.0" prefWidth="120.0" text="firestName" textFill="WHITE" />
+                  <Label fx:id="lastNameLabel1" layoutX="10.0" layoutY="48.0" prefHeight="39.0" prefWidth="120.0" text="email" textFill="WHITE" />
+                  <Label fx:id="lastNameLabel11" layoutX="10.0" layoutY="90.0" prefHeight="39.0" prefWidth="120.0" text="country" textFill="WHITE" />
+                  <Label fx:id="lastNameLabel12" layoutX="10.0" layoutY="136.0" prefHeight="39.0" prefWidth="158.0" text="amout used to trade" textFill="WHITE" />
+                  <Label fx:id="lastNameLabel13" layoutX="5.0" layoutY="178.0" prefHeight="39.0" prefWidth="112.0" textFill="WHITE" />
+               </children>
+            </Pane>
+            <ImageView fitHeight="37.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="10">
+               <image>
+                  <Image url="@../images/log-out.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="deconnex" mnemonicParsing="false" onAction="#DeconnexAction" opacity="0.0" text="Button" GridPane.rowIndex="10" />
+            <JFXButton buttonType="RAISED" onAction="#personalDataBtnAction" opacity="0.68" prefHeight="70.0" prefWidth="197.0" ripplerFill="WHITE" style="-fx-background-color: black;" text="Personal Data" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" onAction="#portfolioBtnAction" opacity="0.68" prefHeight="69.0" prefWidth="195.0" ripplerFill="WHITE" style="-fx-background-color: black;" text="Portfolio" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" onAction="#listTradersAction" opacity="0.68" prefHeight="69.0" prefWidth="193.0" ripplerFill="WHITE" style="-fx-background-color: black;" text="List Traders" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" onAction="#helpDataBtnAction" opacity="0.68" prefHeight="67.0" prefWidth="214.0" ripplerFill="WHITE" style="-fx-background-color: black;" text="Help Data" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" onAction="#listBackOfficeUserbtnActtion" opacity="0.68" prefHeight="72.0" prefWidth="193.0" ripplerFill="WHITE" style="-fx-background-color: black;" text="List BackOfficeUsers" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="quizBtn" buttonType="RAISED" onAction="#quizBtn" opacity="0.68" prefHeight="68.0" prefWidth="193.0" ripplerFill="WHITE" style="-fx-background-color: black;" text="Quizs" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="9">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" onAction="#PricingofFXOptionVtn" opacity="0.68" prefHeight="69.0" prefWidth="195.0" ripplerFill="WHITE" style="-fx-background-color: black;" text="Pricing of FXOption" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" onAction="#PricingofEquityOptionAction" opacity="0.68" prefHeight="69.0" prefWidth="195.0" ripplerFill="WHITE" style="-fx-background-color: black;" text="Pricing Of EquityOption" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" maxWidth="100.0" minWidth="61.0" prefWidth="61.0" />
+            <ColumnConstraints maxWidth="193.0" minWidth="0.0" prefWidth="193.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="216.0" minHeight="0.0" prefHeight="74.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="442.0" minHeight="0.0" prefHeight="188.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="442.0" minHeight="0.0" prefHeight="62.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="442.0" minHeight="10.0" prefHeight="64.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="442.0" minHeight="0.0" prefHeight="67.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="442.0" minHeight="0.0" prefHeight="62.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="567.0" minHeight="0.0" prefHeight="66.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="567.0" minHeight="6.0" prefHeight="63.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="567.0" minHeight="0.0" prefHeight="67.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="567.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="567.0" minHeight="10.0" prefHeight="68.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Pane layoutX="321.0" layoutY="129.0" prefHeight="169.0" prefWidth="960.0" style="-fx-background-color: #a0d6b4; -fx-background-radius: 50px 50px 50px 50px;">
+         <children>
+            <JFXButton fx:id="eur_usdbtn" alignment="TOP_LEFT" buttonType="RAISED" layoutX="16.0" layoutY="14.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#eur_usdAction" opacity="0.61" prefHeight="64.0" prefWidth="155.0" style="-fx-background-color: #021631;" textFill="#021631">
+               <graphic>
+                  <ImageView fitHeight="56.0" fitWidth="127.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../images/EUR8USD.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <JFXButton fx:id="eur_Gbpbtn" alignment="TOP_LEFT" buttonType="RAISED" layoutX="202.0" layoutY="14.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#eur_GbpAction" opacity="0.61" prefHeight="64.0" prefWidth="155.0" style="-fx-background-color: #021631;" text="Button" textFill="#021631">
+               <graphic>
+                  <ImageView fitHeight="56.0" fitWidth="136.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../images/EURGBP.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <JFXButton fx:id="eur_JPYbtn" alignment="TOP_LEFT" buttonType="RAISED" layoutX="382.0" layoutY="14.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#eur_JPYAction" opacity="0.61" prefHeight="64.0" prefWidth="166.0" style="-fx-background-color: #021631;" textFill="#021631">
+               <graphic>
+                  <ImageView fitHeight="55.0" fitWidth="125.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../images/EURJPY.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <JFXButton fx:id="aud_usdbtn" alignment="TOP_LEFT" buttonType="RAISED" layoutX="563.0" layoutY="14.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#aud_usdAction" opacity="0.61" prefHeight="64.0" prefWidth="155.0" style="-fx-background-color: #021631;" textFill="#021631">
+               <graphic>
+                  <ImageView fitHeight="56.0" fitWidth="145.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../images/Sans-titre-5.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <JFXButton fx:id="uds_jpybtn" alignment="TOP_LEFT" buttonType="RAISED" layoutX="748.0" layoutY="14.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#uds_jpyAction" opacity="0.61" prefHeight="64.0" prefWidth="155.0" style="-fx-background-color: #021631;" textFill="#021631">
+               <graphic>
+                  <ImageView fitHeight="56.0" fitWidth="139.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../images/usd_jpy.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <HBox layoutX="56.0" layoutY="78.0" prefHeight="88.0" prefWidth="997.0" style="-fx-background-radius: 50px 50px 50px 50px;">
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <JFXTextField fx:id="eur_usdInput" depthTest="DISABLE" focusColor="#eec254" layoutX="-31.0" prefHeight="43.0" prefWidth="166.0" promptText="Rate" unFocusColor="#002448">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <JFXTextField fx:id="eur_GbpInput" depthTest="DISABLE" focusColor="#eec254" layoutX="-53.0" prefHeight="43.0" prefWidth="166.0" promptText="Rate" unFocusColor="#002448">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <JFXTextField fx:id="eur_JPYInput" depthTest="DISABLE" focusColor="#eec254" layoutX="-67.0" prefHeight="43.0" prefWidth="166.0" promptText="Rate" unFocusColor="#002448">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <JFXTextField fx:id="aud_usdInput" depthTest="DISABLE" focusColor="#eec254" layoutX="-86.0" prefHeight="43.0" prefWidth="166.0" promptText="Rate" unFocusColor="#002448">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="uds_jpyInput" depthTest="DISABLE" focusColor="#eec254" layoutX="92.0" layoutY="1.0" prefHeight="43.0" prefWidth="166.0" promptText="Rate" unFocusColor="#002448">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

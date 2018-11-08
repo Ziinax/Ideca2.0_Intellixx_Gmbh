@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.ideca_client.PwdForgottenController">
+   <children>
+      <ImageView fitHeight="492.0" fitWidth="405.0" layoutX="-2.0">
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+         <image>
+            <Image url="@../images/FPW_rectangle1.jpg" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="tf_cin" focusColor="#eac086" layoutX="23.0" layoutY="200.0" maxWidth="291.0" minWidth="291.0" prefHeight="46.0" prefWidth="291.0" promptText="CIN" style="-fx-text-fill: white;" unFocusColor="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="102.0" layoutY="68.0" text="Did you forgot your password ?" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="159.0" prefHeight="27.0" prefWidth="123.0" text="Enter your CIN:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btn_validate" buttonType="RAISED" layoutX="102.0" layoutY="368.0" onAction="#SaveFPW" prefHeight="58.0" prefWidth="193.0" style="-fx-background-color: #e8702a;" text="Save" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="26.0" layoutY="301.0" prefHeight="23.0" prefWidth="285.0" text="Your CIN is your new password !" textFill="#e8702a">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="57.0" fitWidth="45.0" layoutX="34.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/FPW_icon_lock.png" />
+         </image>
+      </ImageView>
+      <JFXToggleButton layoutX="-287.0" layoutY="-44.0" />
+      <Label fx:id="ErreurInput" layoutX="23.0" layoutY="128.0" prefHeight="21.0" prefWidth="360.0" textFill="RED" />
+   </children>
+</AnchorPane>

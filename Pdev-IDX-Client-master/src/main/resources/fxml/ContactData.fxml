@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1100.0" prefWidth="1269.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane prefHeight="900.0" prefWidth="1271.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1271.0" minWidth="10.0" prefWidth="1271.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="628.0" minWidth="0.0" prefWidth="0.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="294.0" minHeight="0.0" prefHeight="89.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="721.0" minHeight="10.0" prefHeight="93.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1274.0" minHeight="10.0" prefHeight="920.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Pane prefHeight="907.0" prefWidth="1269.0" GridPane.rowIndex="2">
+               <children>
+                  <Pane layoutX="139.0" layoutY="115.0" prefHeight="353.0" prefWidth="965.0" style="-fx-background-color: #e5e5e5;">
+                     <children>
+                        <GridPane layoutX="51.0" layoutY="39.0" prefHeight="241.0" prefWidth="821.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="406.0" minWidth="10.0" prefWidth="221.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="661.0" minWidth="10.0" prefWidth="600.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="73.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="128.0" minHeight="10.0" prefHeight="85.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="63.0" minHeight="8.0" prefHeight="34.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <TextField prefHeight="50.0" prefWidth="692.0" GridPane.columnIndex="1" />
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="28.0" prefWidth="221.0" text="    Email" />
+                              <Pane prefHeight="60.0" prefWidth="491.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <children>
+                                    <HBox layoutY="-2.0" prefHeight="68.0" prefWidth="600.0">
+                                       <children>
+                                          <Pane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <TextField layoutX="1.0" prefHeight="50.0" prefWidth="192.0" />
+                                             </children>
+                                          </Pane>
+                                          <Pane prefHeight="68.0" prefWidth="398.0">
+                                             <children>
+                                                <TextField layoutX="5.0" prefHeight="50.0" prefWidth="398.0" />
+                                                <Label layoutX="61.0" layoutY="58.0" prefHeight="21.0" prefWidth="276.0" text="Number without country code " />
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </HBox>
+                                    <Label alignment="BOTTOM_LEFT" layoutX="3.0" layoutY="56.0" prefHeight="21.0" prefWidth="183.0" text="Country Code" />
+                                 </children>
+                              </Pane>
+                              <JFXButton buttonType="RAISED" prefHeight="38.0" prefWidth="114.0" ripplerFill="#33da63" style="-fx-background-color: #33da63;" text="Save" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                 <children>
+                                    <Label alignment="CENTER" layoutX="43.0" layoutY="22.0" prefHeight="21.0" prefWidth="153.0" text="Phone Number" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </Pane>
+                  <Label alignment="CENTER" layoutX="139.0" layoutY="73.0" prefHeight="42.0" prefWidth="211.0" style="-fx-background-color: #e5e5e5;" text="Contact Support" textFill="#e8702a" />
+               </children>
+            </Pane>
+            <HBox prefHeight="100.0" prefWidth="200.0" styleClass="top" stylesheets="@../../../../../CSS/Home.css">
+               <children>
+                  <Pane prefHeight="95.0" prefWidth="1269.0" style="-fx-background-color: #021631;">
+                     <children>
+                        <JFXButton buttonType="RAISED" layoutX="250.0" layoutY="10.0" prefHeight="64.0" prefWidth="153.0" ripplerFill="#e8702a" text="Profile" textFill="WHITE">
+                           <font>
+                              <Font name="Bodoni MT" size="25.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutX="443.0" layoutY="10.0" prefHeight="64.0" prefWidth="153.0" ripplerFill="#e8702a" text="About us" textFill="WHITE">
+                           <font>
+                              <Font name="Bodoni MT" size="25.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #002448;" GridPane.rowIndex="1">
+               <children>
+                  <JFXButton buttonType="RAISED" layoutX="3.0" layoutY="9.0" prefHeight="64.0" prefWidth="139.0" text="Deposit" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="142.0" layoutY="9.0" prefHeight="64.0" prefWidth="186.0" text="Contact Support" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="328.0" layoutY="8.0" prefHeight="64.0" prefWidth="183.0" text="Personal Data " textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="522.0" layoutY="9.0" prefHeight="64.0" prefWidth="183.0" text="Trading History" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,273 @@
+/* Selected row */
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: brown;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background: -fx-accent;
+    -fx-text-fill: -fx-selection-bar-text;
+}
+
+/* Selected row when table not focused */
+.table-row-cell:filled:focused:selected {
+    -fx-background-color: red;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background: -fx-accent;
+    -fx-text-fill: -fx-selection-bar-text;
+}
+
+/* Row hovered */
+.table-view:row-selection .table-row-cell:filled:hover {
+    -fx-background-color: green;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-text-fill: -fx-text-inner-color;
+}
+
+/* Selected row hovered */
+.table-view:focused .table-row-cell:filled:focused:selected:hover {
+    -fx-background: -fx-accent;
+    -fx-background-color: yellow;
+    -fx-background-insets: 0, 1, 2;
+    -fx-text-fill: -fx-selection-bar-text;
+}
+
+/* Selected row hovered when table not focused */
+.table-view:row-selection .table-row-cell:filled:focused:hover {
+    -fx-background-color: blue;
+    -fx-background-insets: 0, 0 0 1 0, 1 1 2 1, 2 2 3 2, 3 3 4 3;
+    -fx-text-fill: -fx-text-inner-color;
+}
+
+
+
+ 
+#bouttonRecherche{
+ 
+    -fx-background-radius: 5px 0 0 5px;
+    -fx-background-color:  #005060;
+    -fx-background-image: url("../IMAGES/find.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: 1 top;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+}
+
+#bouttonRecherche:hover{
+    -fx-background-color: transparent;
+    -fx-background-image: url("../IMAGES/findB.png");
+    -fx-opacity: 0.75;
+}
+#bouttonPDF{
+    
+    -fx-background-image: url("../IMAGES/pdf.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: center 18px;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+    -fx-background-color: #101029;
+
+    -fx-text-fill: #8a8476;
+    -fx-font-family:"texgyreadventorbold", Arial, Verdana, Helvetica,sans-serif;
+    -fx-font-weight: bold;
+    -fx-font-size: 1.2em;
+    
+
+}
+
+#bouttonPDF:hover{
+    -fx-background-color: transparent;
+    -fx-background-image: url("../IMAGES/pdfB.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: center 18px;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+    -fx-background-color: #ffcf03;
+    -fx-text-fill:#273a47;
+    -fx-background-radius: 9px 9px 0 0;
+}
+.text-field {
+    -fx-background-color: #7FC6BC , white , white;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+}
+
+.text-field:focused {
+    -fx-background-color: #a9a9a9 , white , white;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+}
+
+#Affcar{ 
+    -fx-background-radius: 0px 0 0 0px;
+    -fx-background-color: #01B0F0;
+    -fx-background-image: url("../IMAGES/car.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: center top;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+      -fx-opacity: 0.5;
+}
+#Affcar:hover{
+    -fx-background-color: #000000;
+   
+}
+#Affgift{
+    -fx-background-radius: 0px 0 0 0px;
+    -fx-background-color: #01B0F0;
+    -fx-background-image: url("../IMAGES/gift.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: center top;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+      -fx-opacity: 0.5;
+}
+#Affgift:hover{
+    -fx-background-color: #000000;
+   
+}
+#Affhouse{
+    -fx-background-radius: 0px 0 0 0px;   
+  -fx-background-color: #7FC6BC;
+    -fx-background-image: url("../IMAGES/house.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: center top;  
+   -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+      -fx-opacity: 0.5;
+}
+#Affhouse:hover{
+    -fx-background-color: #101077;
+   
+}
+#label {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 0.6;
+}
+
+#label-bright {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+#label-header {
+    -fx-font-size: 32pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+.table-view {
+    -fx-base: #1d1d1d;
+    -fx-control-inner-background: #1d1d1d;
+    -fx-background-color: #1d1d1d;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 5;
+}
+.button {
+    -fx-padding: 5 22 5 22;   
+    -fx-border-color: #ffcf03;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color: #101029;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11pt;
+    -fx-text-fill: #d8d8d8;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+.button:hover {
+    -fx-background-color: #3a3a3a;
+}
+
+.button:pressed, .button:default:hover:pressed {
+  -fx-background-color: white;
+  -fx-text-fill: #1d1d1d;
+}
+
+.button:focused {
+    -fx-border-color: white, white;
+    -fx-border-width: 1, 1;
+    -fx-border-style: solid, segments(1, 1);
+    -fx-border-radius: 0, 0;
+    -fx-border-insets: 1 1 1 1, 0;
+}
+
+.button:disabled, .button:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: white;
+}
+#pan1{
+   
+    -fx-background-color: #101029;
+    -fx-background-radius: 0 0 0 0;
+    -fx-display: table;
+    -fx-table-layout: fixed;
+    -fx-position: relative;
+    -fx-z-index: 6;
+    
+}
+#Affbourse{
+    -fx-background-radius: 0px 0 0 0px;   
+  -fx-background-color: #7FC6BC;
+    -fx-background-image: url("../IMAGES/bourse.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: center top;  
+   -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+      -fx-opacity: 0.5;
+}
+#Affbourse:hover{
+    -fx-background-color: #101077;
+   
+}
+
+.pan{
+   
+    -fx-background-color: #101029;
+    -fx-background-radius: 0 0 0 0;
+    -fx-display: table;
+    -fx-table-layout: fixed;
+    -fx-position: relative;
+    -fx-z-index: 6;
+     -fx-opacity: 0.75;
+}
+
+.pan:hover{
+      -fx-opacity: 1;
+}
+
+
+
+.boto{
+    -fx-height: 84px;
+    -fx-display: inline-block;
+    -fx-padding: 10px 0 0 1px;
+    -fx-background-color: #2E3844;
+ 
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: center bottom;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+ 
+}  
+	
+
+

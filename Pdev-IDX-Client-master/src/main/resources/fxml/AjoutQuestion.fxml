@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="898.0" prefWidth="1269.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.ideca_client.AjoutQuestionController">
+   <children>
+      <Pane layoutX="7.0" prefHeight="952.0" prefWidth="1269.0">
+         <children>
+            <AnchorPane layoutX="289.0" layoutY="14.0" prefHeight="114.0" prefWidth="207.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff9736d7" height="55.0" layoutX="56.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-background-radius: 50px 50px 20px;" width="843.0" />
+                  <Text layoutX="396.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-: 0px 50px 50px 0px;" text="Add quizs" wrappingWidth="229.81817626953125">
+                     <font>
+                        <Font name="System Bold" size="33.0" />
+                     </font>
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="BLACK" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Text>
+                  <Text fx:id="labelError" fill="#a89090" layoutX="129.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="514.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+               </children></AnchorPane>
+            <GridPane focusTraversable="true" layoutX="377.0" layoutY="120.0" prefHeight="532.0" prefWidth="821.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="21.0" prefWidth="188.0" text="Question" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="21.0" prefWidth="185.0" text="Reponce 1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="21.0" prefWidth="202.0" text="Reponce 2" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="47.0" prefWidth="181.0" text="Reponce 3" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="193.0" text="La vrai reponce " GridPane.rowIndex="5">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="rep2Input" prefHeight="53.0" prefWidth="692.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="rep3Input" prefHeight="51.0" prefWidth="692.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="vraiRepInput" prefHeight="50.0" prefWidth="692.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <TextField fx:id="questionInput" prefHeight="50.0" prefWidth="692.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="rep1Input" alignment="CENTER" prefHeight="50.0" prefWidth="638.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <children>
+                        <Pane prefHeight="200.0" prefWidth="200.0" />
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <JFXButton fx:id="btnpersist" layoutX="43.0" layoutY="14.0" onAction="#btnpersistAction" prefHeight="38.0" prefWidth="114.0" ripplerFill="#33e465" style="-fx-background-color: #49796b;" text="Save" textFill="WHITE" />
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="200.0" prefWidth="200.0" />
+                     </children>
+                  </HBox>
+                  <Label alignment="CENTER" prefHeight="21.0" prefWidth="188.0" text="Catégorie">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXComboBox fx:id="categorieCombo" prefHeight="31.0" prefWidth="348.0" GridPane.columnIndex="1" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="372.0" minWidth="10.0" prefWidth="183.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="692.0" minWidth="10.0" prefWidth="638.0" />
+               </columnConstraints>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <rowConstraints>
+                  <RowConstraints maxHeight="92.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="92.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="118.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="122.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="127.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="148.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="97.0" minHeight="10.0" prefHeight="62.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </children>
+      </Pane>
+      <AnchorPane layoutX="6.0" layoutY="20.0" prefHeight="952.0" prefWidth="279.0" style="-fx-background-color: #49796b; -fx-background-radius: 0px 50px 50px 0px;">
+         <children>
+            <Circle fill="#cceae7" layoutX="116.0" layoutY="144.0" radius="57.0" stroke="#cceae7" strokeType="INSIDE" />
+            <ImageView fitHeight="114.0" fitWidth="104.0" layoutX="64.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/admin.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="31.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="-5.0" layoutY="574.0" prefHeight="328.0" prefWidth="263.0">
+               <children>
+                  <Pane fx:id="ProfilePane" layoutX="75.0" layoutY="42.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="286.0" prefWidth="208.0" styleClass="profile_pane">
+                     <children>
+                        <JFXButton layoutX="-44.0" layoutY="130.0" onAction="#listTradeAction" prefHeight="67.0" prefWidth="231.0" style="-fx-background-color: #cceae7;" text="      List of Trades" textFill="#161717">
+                           <font>
+                              <Font name="System Bold Italic" size="20.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="statistiqueBtn" layoutX="-44.0" layoutY="-18.0" onAction="#statistiqueBtnAction" prefHeight="67.0" prefWidth="231.0" style="-fx-background-color: #cceae7;" text="Statistics" textFill="#161717">
+                           <font>
+                              <Font name="System Bold Italic" size="20.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="quizBtn" layoutX="-43.0" layoutY="56.0" onAction="#quizBtnAction" prefHeight="67.0" prefWidth="231.0" style="-fx-background-color: #cceae7;" text="Quizs" textFill="#161717">
+                           <font>
+                              <Font name="System Bold Italic" size="20.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton contentDisplay="RIGHT" layoutX="-44.0" layoutY="208.0" onAction="#deconnection" prefHeight="67.0" prefWidth="231.0" style="-fx-background-color: #Black;" text="Log Out" textFill="RED">
+                           <font>
+                              <Font name="System Bold Italic" size="20.0" />
+                           </font>
+                        </JFXButton>
+                        <ImageView fitHeight="43.0" fitWidth="49.0" layoutX="-21.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/log-out.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <JFXButton fx:id="lissUserBtn2" layoutX="25.0" layoutY="377.0" onAction="#listBackOfficeUsersAction" prefHeight="67.0" prefWidth="231.0" style="-fx-background-color: #cceae7;" text="BackOfficeUers" textFill="#161717">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="25.0" layoutY="303.0" onAction="#listActiveTraders" prefHeight="67.0" prefWidth="231.0" style="-fx-background-color: #cceae7;" text="Active Traders" textFill="#161717">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="marketDataBnt" layoutX="25.0" layoutY="451.0" onAction="#marketDataBntAction" prefHeight="67.0" prefWidth="231.0" style="-fx-background-color: #cceae7;" text="      Market Data" textFill="#161717">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnEquitySymbol" layoutX="25.0" layoutY="524.0" onAction="#equitySymbolAction" prefHeight="67.0" prefWidth="231.0" style="-fx-background-color: #cceae7;" text="      Edit Assets" textFill="#161717">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="lissUserBtn" layoutX="24.0" layoutY="229.0" onAction="#lissUserBtnAction" prefHeight="67.0" prefWidth="231.0" style="-fx-background-color: #cceae7;" text=" Non active Traders" textFill="#161717">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </JFXButton>
+            <Button layoutX="34.0" layoutY="14.0" mnemonicParsing="false" onAction="#goAccueil" opacity="0.0" prefHeight="56.0" prefWidth="194.0" text="Button" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

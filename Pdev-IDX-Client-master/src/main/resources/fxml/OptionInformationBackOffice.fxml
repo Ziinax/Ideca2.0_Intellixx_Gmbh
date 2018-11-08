@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: ;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.ideca_client.OptionInformationBackOfficeController">
+   <children>
+      <ImageView fitHeight="413.0" fitWidth="609.0" layoutX="-1.0" layoutY="-9.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/16930972_1843440929270056_1574893136_o.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="79.0" fitWidth="169.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="44.0" layoutY="54.0" opacity="0.82" prefHeight="319.0" prefWidth="528.0" style="-fx-background-color: #3183a5; -fx-background-radius: 50px 50px 50px 50px;">
+         <children>
+            <ImageView fitHeight="71.0" fitWidth="50.0" layoutX="-2.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/admin.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="58.0" layoutY="40.0" text="Trader Name" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="traderName" layoutX="192.0" layoutY="43.0" prefHeight="21.0" prefWidth="268.0" text="Label" textFill="#e1b187" />
+            <Label layoutX="309.0" layoutY="84.0" text="Grade" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="grade" layoutX="414.0" layoutY="87.0" text="Label" textFill="#e1b187" />
+            <Label layoutX="58.0" layoutY="84.0" text="Email" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="email" layoutX="192.0" layoutY="87.0" prefHeight="21.0" prefWidth="99.0" text="Label" textFill="#e1b187" />
+            <ImageView fitHeight="82.0" fitWidth="50.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/fx.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="60.0" layoutY="160.0" text="Option Name" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="optionName" layoutX="196.0" layoutY="163.0" text="Label" textFill="#e1b187" />
+            <Label layoutX="60.0" layoutY="198.0" text="SpotRate" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="60.0" layoutY="235.0" text="StrikePrice" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="58.0" layoutY="270.0" text="Nominal" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="spotRate" layoutX="196.0" layoutY="201.0" text="Label" textFill="#e1b187" />
+            <Label fx:id="strikePrice" layoutX="196.0" layoutY="238.0" text="Label" textFill="#e1b187" />
+            <Label fx:id="nominal" layoutX="196.0" layoutY="273.0" text="Label" textFill="#e1b187" />
+            <Label fx:id="volatility" layoutX="410.0" layoutY="202.0" text="Label" textFill="#e1b187" />
+            <Label fx:id="maturity" layoutX="410.0" layoutY="238.0" text="Label" textFill="#e1b187" />
+            <Label layoutX="309.0" layoutY="199.0" text="Volatility" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="309.0" layoutY="235.0" text="Maturity" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="307.0" layoutY="270.0" text="Premium" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="premium" layoutX="410.0" layoutY="273.0" prefHeight="21.0" prefWidth="114.0" text="Label" textFill="#e1b187" />
+            <Label layoutX="56.0" layoutY="119.0" prefHeight="27.0" prefWidth="77.0" text="Amount" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="amount" layoutX="192.0" layoutY="122.0" prefHeight="21.0" prefWidth="50.0" text="Label" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

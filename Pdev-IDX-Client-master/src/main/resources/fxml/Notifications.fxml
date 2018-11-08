@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="898.0" prefWidth="1269.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.ideca_client.NotificationsController">
+   <children>
+      <Pane layoutX="4.0" prefHeight="952.0" prefWidth="1269.0">
+         <children>
+            <AnchorPane layoutX="-4.0" prefHeight="952.0" prefWidth="294.0" style="-fx-background-color: #49796b; -fx-background-radius: 0px 50px 50px 0px;">
+               <children>
+                  <Circle fill="#cceae7" layoutX="116.0" layoutY="144.0" radius="57.0" stroke="#cceae7" strokeType="INSIDE" />
+                  <ImageView fitHeight="114.0" fitWidth="104.0" layoutX="64.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/admin.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="31.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logo.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="homeBtn" layoutX="5.0" layoutY="211.0" onAction="#homeBtnAction" prefHeight="67.0" prefWidth="243.0" style="-fx-background-color: #cceae7;" text="Home" textFill="#161717">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <Pane layoutY="586.0">
+                     <children>
+                        <Pane fx:id="ProfilePane" layoutX="75.0" layoutY="42.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="286.0" prefWidth="208.0" styleClass="profile_pane">
+                           <children>
+                              <ImageView fitHeight="308.0" fitWidth="269.0" layoutX="-75.0" layoutY="-42.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/PROFILE.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="profile_pic" fitHeight="49.0" fitWidth="51.0" layoutX="-44.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/user.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="289.0" layoutY="14.0" prefHeight="114.0" prefWidth="207.0">
+               <children>
+                  <JFXTextField fx:id="notification_id" layoutY="-12.0" visible="false" />
+               </children></AnchorPane>
+            <Pane layoutX="311.0" layoutY="178.0" prefHeight="597.0" prefWidth="905.0">
+               <children>
+                  <Pane prefHeight="596.0" prefWidth="905.0" style="-fx-background-color: #e5e5e5;">
+                     <children>
+                        <TableView fx:id="Table_Notifications" layoutX="1.0" layoutY="-4.0" onMouseClicked="#rowSelection" prefHeight="596.0" prefWidth="905.0">
+                           <columns>
+                              <TableColumn fx:id="col_Id" prefWidth="51.0" text="id" />
+                              <TableColumn fx:id="col_Trader" prefWidth="235.0" text="Trader" />
+                              <TableColumn fx:id="col_Subject" minWidth="4.0" prefWidth="422.0" text="Subject" />
+                              <TableColumn fx:id="col_Date" minWidth="0.0" prefWidth="127.0" text="Date" />
+                              <TableColumn fx:id="col_State" minWidth="0.0" prefWidth="65.0" text="State" />
+                              <TableColumn fx:id="col_Type" minWidth="9.0" prefWidth="147.0" text="Type" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Label alignment="CENTER" layoutX="518.0" prefHeight="69.0" prefWidth="491.0" text="Notifications" textFill="#49796b">
+               <font>
+                  <Font name="System Bold Italic" size="47.0" />
+               </font>
+            </Label>
+            <Label fx:id="Notification_message" layoutX="311.0" layoutY="110.0" prefHeight="49.0" prefWidth="905.0" style="-fx-background-color: #49796b;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="demands" layoutX="1114.0" layoutY="120.0" onMouseClicked="#Demands_notifications" text="Demands" />
+            <Label fx:id="Not_seen" layoutX="1050.0" layoutY="120.0" onMouseClicked="#not_seen_notifications" text="Not seen" />
+            <Label fx:id="refresh_list" layoutX="995.0" layoutY="120.0" onMouseClicked="#refresh_notification" text="refrech" />
+            <Label fx:id="Message_notification" layoutX="337.0" layoutY="117.0" prefHeight="34.0" prefWidth="566.0" textFill="#cd250b">
+               <font>
+                  <Font name="Arial Black" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="855.0" layoutY="112.0" onMouseClicked="#Delete" prefHeight="34.0" prefWidth="123.0" text="Delete Notification" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

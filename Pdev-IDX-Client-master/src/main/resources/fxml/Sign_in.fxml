@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXMasonryPane?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="898.0" prefWidth="1269.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.ideca_client.Sign_inController">
+   <children>
+      <Pane prefHeight="898.0" prefWidth="1269.0">
+         <children>
+            <ImageView fitHeight="898.0" fitWidth="1276.0" layoutX="-6.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@../images/Acceuil.jpg" />
+               </image>
+            </ImageView>
+            <Pane layoutX="263.0" layoutY="139.0" opacity="0.49" prefHeight="552.0" prefWidth="787.0" style="-fx-background-color: black; -fx-background-radius: 50px 50px 50px 50px;">
+               <children>
+                  <GridPane layoutX="28.0" layoutY="14.0" prefHeight="475.0" prefWidth="718.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="372.0" minWidth="10.0" prefWidth="168.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="585.0" minWidth="10.0" prefWidth="585.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="235.0" minHeight="10.0" prefHeight="191.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="236.0" minHeight="10.0" prefHeight="173.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="195.0" minHeight="10.0" prefHeight="112.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <JFXPasswordField fx:id="pwdInput" focusColor="#eec254" labelFloat="true" prefHeight="76.0" prefWidth="596.0" promptText="Password" style="-fx-text-fill: white;" unFocusColor="#e8702a" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor></JFXPasswordField>
+                        <JFXTextField fx:id="emailInput" depthTest="DISABLE" focusColor="#eec254" labelFloat="true" prefHeight="72.0" prefWidth="585.0" promptText="Enter your Email" style="-fx-text-fill: white;" unFocusColor="#e8702a" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor></JFXTextField>
+                        <ImageView fitHeight="40.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true" style="-fx-translate-x: 50;" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/locked-padlock.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="40.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true" style="-fx-translate-x: 50;">
+                           <image>
+                              <Image url="@../images/envelope.png" />
+                           </image>
+                        </ImageView>
+                        <JFXButton fx:id="signInAction" buttonType="RAISED" onAction="#signInAction" prefHeight="41.0" prefWidth="575.0" ripplerFill="#e8702a" style="-fx-background-color: #e8702a;" text="Sign In" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                     </children>
+                  </GridPane>
+                  <JFXButton fx:id="pwdforgotten" buttonType="RAISED" layoutX="289.0" layoutY="489.0" onAction="#pwdforgottenAction" prefHeight="41.0" prefWidth="334.0" ripplerFill="#e8702a" text="Forgotten password?" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <JFXButton buttonType="RAISED" layoutX="698.0" layoutY="689.0" onAction="#inscriptionAction" prefHeight="41.0" prefWidth="171.0" ripplerFill="#e8702a" text="Registration" textFill="#e8702a">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <Label layoutX="480.0" layoutY="699.0" prefHeight="21.0" prefWidth="202.0" text="You don't have an account?" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <JFXButton fx:id="btn_exit" buttonType="RAISED" contentDisplay="RIGHT" layoutX="1068.0" layoutY="14.0" onAction="#fermerAction" prefHeight="41.0" prefWidth="171.0" ripplerFill="#e8702a" text="Close  " textFill="#e8702a">
+               <graphic>
+                  <ImageView fitHeight="47.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logout.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></JFXButton>
+            <Label fx:id="labelStatus" layoutX="307.0" layoutY="155.0" prefHeight="21.0" prefWidth="657.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <ImageView fitHeight="87.0" fitWidth="315.0" layoutX="523.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo.png" />
+               </image>
+            </ImageView>
+            <JFXMasonryPane layoutX="113.0" layoutY="49.0" />
+            <Text fx:id="emailLabel" fill="WHITE" layoutX="1068.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="134.6708984375" />
+            <Text fx:id="pwdLabel" fill="WHITE" layoutX="1068.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="134.6708984375" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
